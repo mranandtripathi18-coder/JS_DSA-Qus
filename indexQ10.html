@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //    Q10. Filter Products by Price
+                
+
+
+              function filterProducts(products, maxPrice) {
+    let result = [];
+
+    for (let i = 0; i < products.length; i++) {
+        if (products[i].price < maxPrice) {
+            result.push(products[i]);
+        }
+    }
+
+    return result;
+}
+
+let products = [
+    { id: 1, name: "Keyboard", price: 800 },
+    { id: 2, name: "Monitor", price: 5000 }
+];
+
+console.log(filterProducts(products, 1000));
+
+
+
+
+// o/p:[ { id: 1, name: "Keyboard", price: 800 }  ]
+
+
+    </script>
+</body>
+</html>

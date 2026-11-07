@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q7. Find the Highest Product Price
+          
+
+        function highestPrice(arr) {
+    let highest = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > highest) {
+            highest = arr[i];
+        }
+    }
+
+    return highest;
+}
+
+console.log(highestPrice([499, 999, 299, 1499, 799]));
+
+
+// o/p:1499  
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q3. Count Character Frequency
+
+    function countCharacters(str) {
+    let result = {};
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (result[char]) {
+            result[char]++;
+        }
+        else {
+            result[char] = 1;
+        }
+    }
+
+    return result;
+   }
+
+   console.log(countCharacters("javascript"));
+
+//    o/p:{
+//     j: 1,
+//     a: 2,
+//     v: 1,
+//     s: 1,
+//     c: 1,
+//     r: 1,
+//     i: 1,
+//     p: 1,
+//     t: 1
+// }
+
+
+
+    </script>
+</body>
+</html>

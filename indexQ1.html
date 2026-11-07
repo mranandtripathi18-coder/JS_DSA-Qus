@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1. Find the Second-Highest Score
+
+
+        function secondHighest(arr) {
+    let highest = -Infinity;
+    let secondHighest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > highest) {
+            secondHighest = highest;
+            highest = arr[i];
+        }
+        else if (arr[i] > secondHighest && arr[i] < highest) {
+            secondHighest = arr[i];
+        }
+     }
+
+     if (secondHighest === -Infinity) {
+        return null;
+     }
+
+     return secondHighest;
+   }
+
+    console.log(secondHighest([45, 80, 90, 65, 90, 70]));
+
+
+     // output: 80
+
+
+    
+
+
+    
+
+
+
+    </script>
+</body>
+</html>
